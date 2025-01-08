@@ -238,10 +238,6 @@ legend {
   color: #290D0D;
   font-weight: bold;
 }
-.c_kv__scroll::after {
-  content: "▼";
-  color: #fff;
-}
 
 .c_header__attention {
   background-color: #290D0D;
@@ -283,7 +279,7 @@ legend {
     opacity: 1;
     z-index: 200;
     pointer-events: auto;
-    height: 80px;
+    height: 50px;
     position: sticky;
     /* sticky指定 */
     top: 0px;
@@ -331,8 +327,8 @@ legend {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    line-height: 2.5em;
-    margin-top: 40px;
+    line-height: 1.5em;
+    margin-top: 25px;
     height: 0;
   }
 }

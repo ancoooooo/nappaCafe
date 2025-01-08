@@ -97,9 +97,9 @@
     color: $black;
     font-weight: bold;
 
-    &::after {
-      content:'▼';
-      color:$white;
+    // &::after {
+    //   content:'▼';
+    //   color:$white;
       // @include beaf;
       // // position: absolute;
       // width: 2px;
@@ -137,7 +137,7 @@
 
       // }
 
-    }
+    // }
 
   }
 }
@@ -200,7 +200,7 @@
 
 
     //navfixed
-    height: 80px;
+    height: 50px;
 
     position: sticky;
     /* sticky指定 */
@@ -260,8 +260,8 @@
       flex-direction: row;
       justify-content: center;
       gap: 40px;
-      line-height: 2.5em;
-      margin-top: 40px;
+      line-height: 1.5em;
+      margin-top: 25px;
       height: 0;
 
 
