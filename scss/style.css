@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Zen Old Mincho", serif;
+  color: #290D0D;
+}
+
+h2 {
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 32px;
+  font-size: 2rem;
+  letter-spacing: 10%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+}
+@media (min-width: 1000px) {
+  h3 {
+    font-size: 32px;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    line-height: 4rem;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+}
+@media (min-width: 1000px) {
+  p {
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  vertical-align: top;
+  border-style: none;
+}
+
+a {
+  outline: none;
+  -webkit-touch-callout: none;
+  transition: color 0.2s, -webkit-text-decoration 0.2s;
+  transition: color 0.2s, text-decoration 0.2s;
+  transition: color 0.2s, text-decoration 0.2s, -webkit-text-decoration 0.2s;
+}
+
+a:hover {
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+a:focus,
+*:focus {
+  outline: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=date],
+input[type=time],
+input[type=password],
+input[type=email],
+textarea {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+  display: block;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+.c_about__container {
+  width: 60vw;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.c_kv__img img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .c_kv__img img {
+    width: 100vw;
+    height: auto;
+  }
+}
+.c_kv__logo {
+  position: absolute;
+  width: 25vw;
+  min-width: 250px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+@media (min-width: 1000px) {
+  .c_kv__logo {
+    top: 10vw;
+    left: 37vw;
+    transform: none;
+  }
+}
+
+.c_header__attention {
+  background-color: #290D0D;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .c_header__attention {
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+  }
+}
+
+.l_gnav__list {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .l_gnav__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: "Delius Swash Caps", cursive;
+  }
+}
+
+.c_about {
+  position: relative;
+}
+.c_about::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  z-index: -10;
+  background-image: url(../img/bg_illust/plant_illust.svg);
+  width: 100vw;
+  height: 50vw;
+  top: -5vh;
+  left: 0;
+}
+@media (min-width: 1000px) {
+  .c_about::before {
+    width: 100vw;
+    height: 35vw;
+    top: -20vh;
+  }
+}
+.c_about::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  z-index: 30;
+  background-image: url(../img/bg_illust/flower_illust.svg);
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 37vw;
+}
+.c_about::after__container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .c_about::after__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}
+.c_about::after__img {
+  display: block;
+  width: 50vh;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+@media (min-width: 1000px) {
+  .c_about::after__img {
+    width: 430px;
+    height: auto;
+    border-radius: 0%;
+    margin: 0;
+  }
+}
+.c_about__container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .c_about__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}
+.c_about__img {
+  display: block;
+  border-radius: 50% 50%;
+  width: 50vh;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .c_about__img {
+    width: 430px;
+    height: auto;
+    border-radius: 0%;
+  }
+}
+
+.c_food {
+  position: relative;
+}
+.c_food::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  z-index: 50;
+  background-image: url(../img/bg_illust/vefetable_illust.svg);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vw;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1000px) {
+  .c_food::before {
+    width: 50vw;
+    height: 30vw;
+  }
+}
+.c_food__container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .c_food__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.c_food__img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .c_food__img {
+    width: 32vw;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.e_access__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 1000px) {
+  .e_access__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.e_access__item {
+  display: flex;
+}
+.e_access__map {
+  background-color: red;
+}
+
+.c_menu__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .c_menu__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+.c_menu__item {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

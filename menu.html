@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <title>HanaCAFE nappa69</title>
+    <!-- 電話番号検知無効化 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="l_header__menuPage">
+        <div class="l_header__container">
+            <h1 class="c_kv__subLogo" id="headerMv"><img src="img/logo/menupage_logo.png" alt="HanaCAFE nappa69"></h1>
+
+
+            <nav class="l_gnav__header" id="headerFixed">
+                <ul class="l_gnav__header_list">
+                    <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="index.html">Home</a></li>
+                    <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#about">About us</a></li>
+                    <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#food">Food</a></li>
+                    <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#menu">Menu</a></li>
+                    <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#access">Access</a></li>
+                    <li class="l_gnav__headerItem_reserved c_btn"><a href="" class="c_btn_white">Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="l_header__hamburger">
+            <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
+        </div>
+    </header>
+    <main class="l_main">
+
+        <div class="l_main__inner">
+            <div class="l_main__container">
+                <!-- <h2 class="c_menuPage__pageTitle">Menu</h2> -->
+                <section class="c_menuPage">
+                    <h2>Main</h2>
+                    <img class="c_menuPage__img" src="img/menu/plate_menu.jpg" alt="プレートご飯">
+                    <ul>
+                        <li>nappaごはんプレート</li>
+                        <li>ふわとろオムライス</li>
+                        <li>オーブンフィニッシュハンバーグ</li>
+                        <li>ペンネゴルゴンゾーラ</li>
+                        <li>本日のパスタ</li>
+                    </ul>
+                    <ul>
+                        <li>自家製丸パン</li>
+                        <li>バゲット</li>
+                        <li>玄米ごはん</li>
+                    </ul>
+                    <h4>salada</h4>
+                    <ul>
+                        <li>グリーンサラダ</li>
+                        <li>ポテトサラダ</li>
+                        <li>生ハムのせシーザーサラダ</li>
+                        <li>季節野菜のバーニャカウダ</li>
+                    </ul>
+
+                </section>
+                <section class="c_menuPage">
+                    <h2>Dessert</h2>
+                    <img class="c_menuPage__img" src="img/menu/dessert_menu.jpg" alt="パウンドケーキ">
+                    <ul>
+                        <li>ジンジャーとくるみのパウンドケーキ</li>
+                        <li>ガトーショコラ</li>
+                        <li>チーズケーキ</li>
+                        <li>アフォガード</li>
+                        <li>抹茶わらび餅パフェ</li>
+                        <li>チョコレートパフェ</li>
+                        <li>アイスクリーム / バニラ・チョコ・抹茶</li>
+                        <li>手作りクッキー / 黒ごま・ジンジャー</li>
+                        <li>丸パンのフレンチトースト</li>
+                    </ul>
+
+                </section>
+                <section class="c_menuPage">
+                    <h2>Drink</h2>
+                    <ul class="horizon_tab js-tab_switch--tab">
+                        <li class="horizon_tab--item">
+                            <a href="#content01" class="horizon_tab--item--btn">Coffee</a>
+                        </li>
+                        <li class="horizon_tab--item">
+                            <a href="#content02" class="horizon_tab--item--btn">Tea</a>
+                        </li>
+                        <li class="horizon_tab--item">
+                            <a href="#content03" class="horizon_tab--item--btn">Soft Drink</a>
+                        </li>
+                        <li class="horizon_tab--item">
+                            <a href="#content04" class="horizon_tab--item--btn">Alcohol</a>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="content_node js-tab_switch--body">
+                        <div id="content01" class="content_node--inner">
+                            <div class="content_node__container">
+                                <img src="img/menu/coffee-flowers.jpg" alt="コーヒー">
+                                <div class="content_node__menuText">
+                                    <h2 class="c_menuPage__h2--sub-left">Coffee</h2>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt><span></span></dt>
+                                        <dd class="e_menuPage__temperature--hot">Hot</dd>
+                                        <dd class="e_menuPage__temperature--cold">Cold</dd>
+                                    </dl>
+                                    <ul class="e_menuPage__category">
+                                        <li>nappaブレンド</li>
+                                        <li>季節のコーヒー</li>
+                                        <li>本日のコーヒー</li>
+                                        <li>オーガニック・エチオピア</li>
+                                        <li>デカフェ</li>
+                                    </ul>
+                                    <ul class="e_menuPage__category">
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>アイスコーヒー</dt>
+                                                <dd><span></span></dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>コーヒーフロート</dt>
+                                                <dd><span></span></dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>アイスラテフロート</dt>
+                                                <dd><span></span></dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>カフェイタリアーノ</dt>
+                                                <dd><span></span></dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>カフェアメリカーノ</dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>カフェラテ</dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>カプチーノ</dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>カフェモカ <span>キャラメルカプチーノ<span></dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>ホイップラテ</dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="e_menuPage__temperature">
+                                                <dt>エスプレッソ</dt>
+                                                <dd class="e_menuPage__temperature--hot">●</dd>
+                                                <dd class="e_menuPage__temperature--cold">●</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content02" class="content_node--inner">
+                            <div class="content_node__container">
+                                <img src="img/menu/tea_flower.jpg" alt="">
+                                <div class="content_node__menuText-width">
+                                    <h2 class="c_menuPage__h2--sub-left">Tea</h2>
+                                    <ul class="e_menuPage__category">
+                                        <li>ダージリン</li>
+                                        <li>キャンディ</li>
+                                        <li>ローズガーデン</li>
+                                        <li>ディンブラ</li>
+                                    </ul>
+                                    <h2 class="c_menuPage__h2--sub-left">Herb Tea</h2>
+                                    <ul class="e_menuPage__category">
+                                        <li>マロウブレンド</li>
+                                        <li>カモミールブレンド</li>
+                                        <li>リンデンフラワーブレンド</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content03" class="content_node--inner">
+
+                            <h2 class="c_menuPage__h2--sub">Soft Drink</h2>
+                            <dl class="e_menuPage__temperature">
+                                <dt><span></span></dt>
+                                <dd class="e_menuPage__temperature--hot">Hot</dd>
+                                <dd class="e_menuPage__temperature--cold">Cold</dd>
+                            </dl>
+                            <ul class="e_menuPage__category">
+                                <li>★豆乳バナナドリンク / おすすめ！</li>
+                                <li>オレンジジュース(100%オーガニック果汁)</li>
+                                <li>グレープフルーツジュース</li>
+                                <li>りんごジュース (100%ストレート果汁)</li>
+                                <li>ウーロン茶</li>
+                                <li>コカ・コーラ</li>
+                                <li>ペリエ</li>
+                                <li>キリンフリー (Al. 0.00%)</li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>抹茶ラテ</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                        <dd class="e_menuPage__temperature--cold">●</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>ホイップ抹茶ラテ</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                        <dd class="e_menuPage__temperature--cold">●</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>優しい味のホットココア / ホイップクリームorマシュマロ</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">nappaオリジナル</h2>
+                            <h4>手作りオーガニックシロップDrink</h4>
+                            <ul class="e_menuPage__category">
+                                <li>青梅のソーダ割り</li>
+                                <li>赤ジソソーダ</li>
+                                <li>ジンジャーレモネードソーダ</li>
+                            </ul>
+                            <h4>手作りジンジャーシロップDrink</h4>
+                            <ul class="e_menuPage__category">
+                                <li>ジンジャーエール</li>
+                                <li>ジンジャーミントライムソーダ</li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>ジンジャーミルク</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                        <dd class="e_menuPage__temperature--cold"><span></span></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>ジンジャーラテ</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                        <dd class="e_menuPage__temperature--cold"><span></span></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>ジンジャーソイミルク</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                        <dd class="e_menuPage__temperature--cold"><span></span></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>ジンジャーチャイ</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="e_menuPage__temperature">
+                                        <dt>はちみつジンジャーミルク</dt>
+                                        <dd class="e_menuPage__temperature--hot">●</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="content04" class="content_node--inner">
+                            <h2 class="c_menuPage__h2--sub">Beer</h2>
+                            <h4>Special Beer</h4>
+                            <p>グリゼット・フェイリデボア / ベルギービール</p>
+                            <h4>craft beer</h4>
+                            <ul class="e_menuPage__category">
+                                <li>ゴールデンエール</li>
+                                <li>パイナップルエール</li>
+                                <li>YOKOHAMA XPA</li>
+                            </ul>
+                            <h4>belgian beer</h4>
+                            <ul class="e_menuPage__category">
+                                <li>ヴェデット エクストラ</li>
+                                <li>ヒューガルデンホワイト</li>
+                                <li>レフ・ブロンド</li>
+                                <li>デュベル</li>
+                                <li>シメイレッド</li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">Wine</h2>
+                            <ul class="e_menuPage__category">
+                                <li>デイリーグラス / 赤・白・ロゼ</li>
+                                <li>デイリーボトル / 赤・白・ロゼ</li>
+                                <li>デキャンタ / 赤・白</li>
+                                <li>スパークリングワインボトル</li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">Whiskey</h2>
+                            <ul class="e_menuPage__category">
+                                <li>ハイボール</li>
+                                <li>WILD TURKEY</li>
+                                <li>JACK DANIEL'S</li>
+                                <li>ブラックニッカスペシャル</li>
+                                <li>JIM BEAM</li>
+                                <li>CHIVAS REGAL 12年</li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">nappa Cocktail</h2>
+                            <h4>手作りジンジャーシロップカクテル</h4>
+                            <ul class="e_menuPage__category">
+                                <li>シャンディーガフ</li>
+                                <li>モスコミュール</li>
+                                <li>ジンバック</li>
+                                <li>アマレットジンジャー</li>
+                            </ul>
+                            <h4>season Cocktail</h4>
+                            <ul class="e_menuPage__category">
+                                <li>カシスビール</li>
+                                <li>ざくろピール</li>
+                                <li>レモンピール</li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">Others Alcohol Drinks</h2>
+                            <ul class="e_menuPage__category">
+                                <li>自家製サングリア</li>
+                                <li>自家製果実酒</li>
+                                <li>沖縄の黒糖梅酒</li>
+                                <li>山田十郎</li>
+                                <li>芋焼酎 / さくらみやび・鹿児島県丸西酒造</li>
+                                <li>アップルワイン</li>
+                                <li>富士山麓ハイボール</li>
+                                <li>スミノフアイス</li>
+                                <li>にごり温州みかん</li>
+                            </ul>
+                            <h2 class="c_menuPage__h2--sub">Non Alcohol Drinks</h2>
+                            <ul class="e_menuPage__category">
+                                <li>アマレットジンジャー</li>
+                                <li>カシスオレンジソーダ</li>
+                                <li>カシスグレープフルーツソーダ</li>
+                                <li>カシスミルク</li>
+                            </ul>
+                        </div>
+                </section>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+    </main>
+    <footer class="l_footer">
+        <div class="l_footer__inner">
+            <nav class="l_gnav">
+                <ul class="l_gnav__list c_footer">
+                    <li class="c_footer__item"><a href="index.html">Home</a></li>
+                    <li class="c_footer__item"><a href="#">About us</a></li>
+                    <li class="c_footer__item"><a href="#">Food</a></li>
+
+                    <li class="c_footer__item"><a href="#">Menu</a></li>
+
+                    <li class="c_footer__item"><a href="#">Access</a></li>
+                    <li class="c_footer__item_reserved c_btn"><a href="" class="c_btn_white">Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="pagetop"><a href="#wrap">▲</a></p>
+        <small class="c_footer__copyright">&copy; HanaCAFE Nappa69</small>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

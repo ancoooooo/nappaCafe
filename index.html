@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <title>HanaCAFE nappa69</title>
+    <!-- 電話番号検知無効化 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="l_header">
+        <div class="l_header__inner">
+            <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
+            <div class="c_kv">
+                <div class="c_kv-items__swiper">
+                    <picture class="c_kv__img">
+                        <source>
+                        <source>
+                        <img src="img/logo/nappa_animation1.gif" alt="">
+                    </picture>
+                </div>
+                <!-- <h1 class="c_kv__logo"><img src="img/main_logo.png" alt="花カフェnappa69"></h1> -->
+                <p class="c_kv__scroll"><!-- Scroll --></p>
+            </div>
+        </div>
+        <div class="c_header__attention" id="headerMv">
+            <p class="c_header__text" id="business-status">本日営業中</p>
+            <p class="c_header__text">営業時間 11:00-23:00(LO・22:30)</p>
+        </div>
+        </div>
+        <nav class="l_gnav__header" id="headerFixed">
+            <ul class="l_gnav__header_list">
+                <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="index.html">Home</a></li>
+                <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#about">About us</a></li>
+                <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#food">Food</a></li>
+                <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#menu">Menu</a></li>
+                <li class="l_gnav__headerItem"><a class="l_gnav__headerLink" href="#access">Access</a></li>
+                <li class="l_gnav__headerItem_reserved c_btn"><a href="" class="c_btn_white">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l_main">
+        <div class="l_main__inner">
+            <section class="c_section c_about">
+                <div class="c_section__inner">
+                    <h2 class="c_section__headerTitle" id="about">About us</h2>
+                    <div class="c_section__content c_about__container">
+                        <div class="c_about__inner">
+                            <h3 class="c_section__subTitle c_about__title fadeIn">
+                                豊かな花と植物<br>素材がぎゅっと詰まった<br>手作りご飯<br>隠れ家カフェ
+                            </h3>
+                            <p class="c_about__text fadeIn">
+                                店主が大好きなものたちを詰め込んだ隠れ家カフェです。<br>
+                                季節の花鉢、多肉植物やサボテン達が皆様をお出迎えします。<br>
+                                <span
+                                    class="c_about__text-hidden">ひとりの時間を大切にしたいお客様にも来ていただけるよう、カウンター席を多数ご用意しました。<br></span>
+                                ゆったりとした空間で素敵な時間をお過ごしください。
+                            </p>
+                        </div>
+                        <img class="c_about__img" src="img/aboutus.webp" alt="花カフェの店員がオープン準備している。カフェの店員の雰囲気がわかる写真">
+                    </div>
+                </div>
+            </section>
+            <section class="c_section c_food">
+                <div class="c_section__inner">
+                    <h2 class="c_section__headerTitle" id="food">Food</h2>
+                    <div class="c_section__content c_food__container">
+                        <img src="img/menu/vegetables.png" alt="新鮮な有機野菜" class="c_food__img">
+                        <div class="c_food__inner">
+                            <h3 class="c_section__subTitle c_food__title fadeIn">体に優しく <br
+                                    class="hidden-pc"><span>心に嬉しいご飯</span></h3>
+                            <div class="c_food__text">
+                                <p class="c_food__headText fadeIn">
+                                    玄米や有機野菜<br>
+                                    旬の地産野菜を中心にした全てのメニューを<br>
+                                    一つ一つ心を込めて手作り。
+                                </p>
+                                <p class="c_food__footText fadeIn">
+                                    毎朝焼くパンやスイーツは国産小麦とバターで作ります。<br>
+                                    自家製のジンジャーエールや果実酒と共に<br>
+                                    お召し上がりください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="c_section c_menu">
+                <div class="c_section__inner">
+                    <h2 class="c_section__headerTitle" id="menu">Menu</h2>
+
+                    <div class="c_menu__container swiper swiper-container " id="my-swiper">
+                        <div class="c_menu__list swiper-wrapper ">
+                            <div class="swiper-slide">
+                                <img class="c_menu__item" src="img/menu/cake1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="c_menu__item" src="img/menu/plate1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="c_menu__item" src="img/menu/parfait1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="c_menu__item" src="img/menu/cake3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="c_menu__item" src="img/menu/plate2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <button class="c_menu__btn c_btn"><a href="menu.html">View More</a></button>
+                </div>
+        </div>
+
+        </section>
+        <section class="c_section e_access">
+            <h2 class="c_section__headerTitle" id="access">Access</h2>
+            <div class="c_section__flex e_access__container">
+                <div class="c_section__content e_access__inner">
+                    <address class="e_access__address">神奈川川崎市中原区新丸子東1-983-1<br>044-872-9288</address>
+                    <p class="e_access__listTitle">営業時間
+                    <dl class="e_access__items">
+                        <div class="e_access__item">
+                            <dt class="e_list__title">ALL days open</dt>
+                            <dd class="e_list__time">11:00-23:00</dd>
+                        </div>
+                        <div class="e_access__item">
+                            <dt class="e_list__title">ランチタイム</dt>
+                            <dd class="e_list__time">11:30-16:00</dd>
+                        </div>
+                        <div class="e_access__item">
+                            <dt class="e_list__title">カフェタイム</dt>
+                            <dd class="e_list__time">15:00-18:00</dd>
+                        </div>
+                        <div class="e_access__item">
+                            <dt class="e_list__title">ディナータイム</dt>
+                            <dd class="e_list__time">18:00-23:00</dd>
+                        </div>
+                        <div class="e_access__item">
+                            <dt class="e_list__title">ラストオーダー</dt>
+                            <dd class="e_list__time">22:30</dd>
+                        </div>
+                    </dl>
+                    <p class="e_access__attention">※木曜日のみ17:00クローズ</p>
+                </div>
+                <div class="e_access__map"><iframe class="e_access__iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.9634137854387!2d139.65950537622777!3d35.579294835566216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f56568cddd57%3A0x72297d2b81a1e085!2sHanaCAFE%20nappa69!5e0!3m2!1sja!2sjp!4v1732447254249!5m2!1sja!2sjp"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="l_footer">
+        <nav class="l_gnav">
+            <ul class="l_gnav__list c_footer">
+                <li class="c_footer__item"><a href="#">Home</a></li>
+                <li class="c_footer__item"><a href="#">About us</a></li>
+                <li class="c_footer__item"><a href="#">Food</a></li>
+                <li class="c_footer__item"><a href="#">Menu</a></li>
+                <li class="c_footer__item e_space"><a href="#">Access</a></li>
+                <li class="c_footer__item_reserved c_btn"><a href="" class="c_btn_white">Reserve</a></li>
+            </ul>
+        </nav>
+        <p class="pagetop"><a href="#wrap">▲</a></p>
+        <small class="c_footer__copyright">&copy; HanaCAFE Nappa69</small>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

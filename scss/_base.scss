@@ -1,0 +1,162 @@
+@use './variables' as *;
+@use './mixin' as *; //ファイル読み込み
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include fz(16);
+  @include font-JP_mincho;
+  color: $black;
+}
+
+
+
+//h2設定
+h2 {
+  @include font-webfont_delius;
+  @include fz(32);
+  letter-spacing: 10%;
+  text-align: center;
+  margin-bottom: 20px;
+
+
+  @include desktop {
+    
+    margin-bottom: 45px;
+  }
+}
+
+//menuPage pageTitle
+.c_menuPage__pageTitle{
+  &::before,::after{
+    @include beaf;
+
+    height: 2px;
+    width: 2em;
+    background-color: $black;
+  }
+}
+
+
+
+h3 {
+  @include fz(24);
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+
+  @include desktop {
+    @include fz(32);
+    letter-spacing: 0.8rem;
+    line-height: 4rem;
+
+  }
+}
+
+//menuPage h4
+h4{
+  @include fz(24);
+  text-align: center;
+  @include font-JP_zenmaru;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+p {
+  line-height: 1.5rem;
+
+
+  @include desktop {
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  vertical-align: top;
+  border-style: none;
+}
+
+a {
+  outline: none; //text-decorationは付かなくてもデバイスによってoutlineが付く場合がある
+  -webkit-touch-callout: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+a:hover {
+  text-decoration-color: transparent;
+}
+
+a:focus,
+*:focus {
+  outline: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+[hidden] {
+  //この属性をもっているもの
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  //
+  outline: none;
+}
+
+// Form
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+  display: block;
+}
+
+fieldset {
+  //fieldset legendセットで使う
+  margin: 0;
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
