@@ -7,5 +7,6 @@
             "savePath": "~/../css",
             "savePathReplacementPairs": null
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

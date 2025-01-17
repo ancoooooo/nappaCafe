@@ -1008,6 +1008,13 @@ body.is-openMenu .c_hamburger__btn::after {
   text-align: center;
   margin-bottom: 10px;
 }
+.c_menuPage__title::before, .c_menuPage__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #290D0D;
+}
 
 .content_node__container {
   display: flex;
@@ -1090,6 +1097,20 @@ body.is-openMenu .c_hamburger__btn::after {
     font-size: 25px;
     padding: 10px 10px 13px 10px;
   }
+}
+
+.e_space__slada {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.c_menu__title::before, .c_menu__title::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #290D0D;
+  margin: 9px 8px;
 }
 
 .fadeIn {

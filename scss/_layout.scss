@@ -1090,6 +1090,16 @@ span {
     text-align: center;
     margin-bottom: 10px;
   }
+
+  &__title{
+    &::before,&::after{
+      content: "";
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: $black;
+    }
+  }
 }
 
 .content_node {
@@ -1185,3 +1195,20 @@ span {
 }
 
 
+
+.e_space__slada{
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+.c_menu__title{
+  &::before,&::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    margin: 9px 8px;
+  }
+}
